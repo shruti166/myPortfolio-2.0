@@ -37,7 +37,16 @@
 
     a {
         font-size: 22px;
-        color: #444
+        color: #4d4d4d;
+        display: block;
+        line-height: 51px;
+        height: 51px;
+        position: relative;
+        text-decoration: none;
+    }
+
+    i {
+        transition: all 0.3s ease-out
     }
   }
 }
