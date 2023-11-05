@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHome, faEnvelope, faUser, faBars } from '@fortawesome/free-solid-svg-icons'
 import { useState } from 'react'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import logo from '../../assets/logo.png';
+import logo from '../../assets/logo-img.png';
 import './sidebar.scss'
 
 export default function Sidebar() {
@@ -19,7 +19,7 @@ export default function Sidebar() {
           src={logo}
           alt="Logo"
         />
-        <p>SHRUTI</p>
+        <p className="sub-logo">Shruti</p>
       </Link>
       <nav className={showNav ? 'mobile-show' : ''}>
         <NavLink

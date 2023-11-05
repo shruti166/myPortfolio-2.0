@@ -6,10 +6,15 @@
   top: 0;
   z-index: 3;
   min-height: 500px;
+  font-family: sans-serif;
 
   .logo {
     display: block;
     padding: 8px 0;
+    text-decoration: none;
+    color: #4d4d4e;
+    text-align: center;
+
 
     img {
       display: block;
@@ -47,6 +52,7 @@
 
       &:hover {
         color: #8a307e;
+        font-weight: bold;
 
         svg {
           opacity: 0;
