@@ -11,15 +11,21 @@
   text-transform: uppercase;
   font-size: 100px;
   position: relative;
-  color:#181818
+  color: #e7e6e7;
 }
-
+.intro {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  color:#4d4d4e
+  
+}
 h2:before {
   content: 'Frontend Developer';
   position: absolute;
   top: 0;
   left: 0;
-  color: #e7e6e7;
+  color:#210002;
   width: 0%;
   overflow: hidden;
   transition: all 0.7s;
@@ -41,47 +47,47 @@ h2:hover:before {
   letter-spacing: 2px;
   position: relative;
   transition: all 0.2s;
-  color: white;
+  color:#210002;
 }
 
-.contact-btn:before {
-  content: '';
-  position: absolute;
-  left: -3px;
-  top: -3px;
-  background-color: #78a7d3;
-  height: 100%;
-  width: 100%;
-  z-index: -1;
-  mix-blend-mode: multiply;
-  transform-origin: top;
-}
+// .contact-btn:before {
+//   content: '';
+//   position: absolute;
+//   left: -3px;
+//   top: -3px;
+//   background-color: #78a7d3;
+//   height: 100%;
+//   width: 100%;
+//   z-index: -1;
+//   mix-blend-mode: multiply;
+//   transform-origin: top;
+// }
 
-.contact-btn:after {
-  content: '';
-  position: absolute;
-  left: 3px;
-  top: 3px;
-  background-color:#8a307e;
-  height: 100%;
-  width: 100%;
-  z-index: -1;
-  // mix-blend-mode: multiply;
-  transition: all 0.2s;
-  transform-origin: bottom;
-}
+// .contact-btn:after {
+//   content: '';
+//   position: absolute;
+//   left: 3px;
+//   top: 3px;
+//   background-color:#8a307e;
+//   height: 100%;
+//   width: 100%;
+//   z-index: -1;
+//   // mix-blend-mode: multiply;
+//   transition: all 0.2s;
+//   transform-origin: bottom;
+// }
 
-.contact-btn:hover:before {
-  top: -6px;
-  left: 0;
-  transform: perspective(1000px) rotateX(75deg);
-}
+// .contact-btn:hover{
+//   top: -6px;
+//   left: 0;
+//   transform: perspective(1000px) rotateX(75deg);
+// }
 
-.contact-btn:hover:after {
-  top: 6px;
-  left: 0;
-  transform: perspective(1000px) rotateX(-75deg);
-}
+// .contact-btn:hover {
+//   top: 6px;
+//   left: 0;
+//   transform: perspective(1000px) rotateX(-75deg);
+// }
 
 .contact-btn:hover {
   font-weight: bold;
