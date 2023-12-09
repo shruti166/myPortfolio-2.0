@@ -8,6 +8,7 @@ import About from './components/About/About';
 import Work from './components/Work/Work';
 import Loader from './components/Loader/Loader'; // Import your Loader component
 import './index.css';
+import Contact from './components/Contact/Contact';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -74,6 +75,7 @@ function App() {
                 <Route index element={<Home />} />
                 <Route path="about" element={<About />} />
                 <Route path="work" element={<Work />} />
+                <Route path="contact" element={<Contact />} />
               </Route>
             </Routes>
           </Parallax>

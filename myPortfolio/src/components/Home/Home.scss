@@ -36,61 +36,35 @@ h2:hover:before {
 }
 
 .contact-btn {
-  text-decoration: none;
-  width: 300px;
-  height: 80px;
-  padding: 10px;
-  background-color: transparent;
-  text-align: center;
-  line-height: 60px;
-  // font-weight: bold;
-  letter-spacing: 2px;
+  background-color: #fff;
+  color: #4d4d4e;
+  border: 3px solid #4d4d4e;
+  width: 290px;
+  padding: 12px 40px;
+  font-size: 15px;
+  text-transform: uppercase;
+  cursor: pointer;
   position: relative;
-  transition: all 0.2s;
-  color:#210002;
+  left: 0;
+  transition: all 0.5s ease-out;
+  border-radius: 10px;
 }
 
-// .contact-btn:before {
-//   content: '';
-//   position: absolute;
-//   left: -3px;
-//   top: -3px;
-//   background-color: #78a7d3;
-//   height: 100%;
-//   width: 100%;
-//   z-index: -1;
-//   mix-blend-mode: multiply;
-//   transform-origin: top;
-// }
 
-// .contact-btn:after {
-//   content: '';
-//   position: absolute;
-//   left: 3px;
-//   top: 3px;
-//   background-color:#8a307e;
-//   height: 100%;
-//   width: 100%;
-//   z-index: -1;
-//   // mix-blend-mode: multiply;
-//   transition: all 0.2s;
-//   transform-origin: bottom;
-// }
-
-// .contact-btn:hover{
-//   top: -6px;
-//   left: 0;
-//   transform: perspective(1000px) rotateX(75deg);
-// }
-
-// .contact-btn:hover {
-//   top: 6px;
-//   left: 0;
-//   transform: perspective(1000px) rotateX(-75deg);
-// }
+.contact-btn:before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 0;
+  left: 0;
+  transition: all 0.5s ease-out;
+}
 
 .contact-btn:hover {
-  font-weight: bold;
+  background-color: #4d4d4e;
+  color: #fff;
 }
+
 
 

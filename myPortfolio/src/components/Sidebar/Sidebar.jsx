@@ -113,8 +113,9 @@ export default function Sidebar() {
         </NavLink>
         <NavLink
           exact="true"
+          target="_blank"
           className="contact-link"
-          to="/contact"
+          to="https://github.com/shruti166"
           onClick={() => setShowNav(false)}
         >
           <FontAwesomeIcon
@@ -132,8 +133,9 @@ export default function Sidebar() {
         </NavLink>
         <NavLink
           exact="true"
+          target="_blank"
           className="contact-link"
-          to="/contact"
+          to="https://www.linkedin.com/in/shruti-joshi-55b67119a/"
           onClick={() => setShowNav(false)}
         >
           <FontAwesomeIcon
