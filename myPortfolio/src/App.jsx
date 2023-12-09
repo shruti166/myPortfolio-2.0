@@ -13,7 +13,7 @@ function App() {
     <>
       <div className="App">
         <Parallax
-          pages={1}
+          pages={1.2}
           style={{ top: '0', left: '0', padding: 0 }}
           className="animation"
         >
