@@ -9,7 +9,7 @@
   margin: 0;
   padding: 0;
   text-transform: uppercase;
-  font-size: 100px;
+  font-size: 80px;
   position: relative;
   color: #e7e6e7;
 }
@@ -21,14 +21,14 @@
   
 }
 h2:before {
-  content: 'Frontend Developer';
+  content: 'Frontend';
   position: absolute;
   top: 0;
   left: 0;
   color:#210002;
   width: 0%;
   overflow: hidden;
-  transition: all 0.7s;
+  transition: all 2s;
 }
 
 h2:hover:before {

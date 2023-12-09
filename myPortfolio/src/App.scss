@@ -1,6 +1,9 @@
 $primary-color: #ffd700;
 
 @import 'animate.css';
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 #textblock {
     background-color: #210002;

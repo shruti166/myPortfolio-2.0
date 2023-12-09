@@ -1,0 +1,29 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* body {
+  margin: 0;
+  font-family:"SF UI Text", "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", sans-serif;
+  z-index: 100;
+  /* // color: #444;
+  // background: url('https://static.vecteezy.com/system/resources/thumbnails/020/402/253/small/starry-night-sky-space-galaxy-seamless-pattern-vector.jpg');
+  // background-position: 0,0;
+  // overflow: hidden;
+  // display: block;
+  // -webkit-font-smoothening: antialiased;
+  // -moz-osx-font-smoothening: grayscale;
+  // animation: animated-pattern 13s linear infinite; */
+/* } */ 
+
+@keyframes animated-pattern {
+  from {background-position: 0 0}
+  to {background-position: 0 600px}
+}
+@import 'animate.css';
+
+
+  
+
+  
+
