@@ -2,15 +2,16 @@ import './Home.scss';
 import Resume from '../../Shruti_Joshi_V2.pdf'; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
-// import { Link } from 'react-router-dom'
+import { useTheme } from '../../contexts/ThemeContext.jsx';
 
 export default function Home() {
   const downloadResume = () => {
     window.open(Resume, '_blank');
   };
+  const { isDarkMode } = useTheme();
   return (
     <>
-    <div className="text-zone" style={{marginTop: 40}}>
+    <div className={`text-zone ${isDarkMode ? 'dark-mode' : ''}`} style={{marginTop: 40}}>
       <h1 className='intro'>
         Hi, <br /> I am Shruti
         <br />

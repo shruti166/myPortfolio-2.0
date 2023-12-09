@@ -10,11 +10,13 @@ import Loader from './components/Loader/Loader'; // Import your Loader component
 import './index.css';
 import Contact from './components/Contact/Contact';
 
+
 function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchData = async () => {
+      setLoading(true);
       // Simulating an asynchronous operation
       setTimeout(() => {
         // Setting loading to false when the operation is complete

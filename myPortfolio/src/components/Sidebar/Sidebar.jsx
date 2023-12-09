@@ -6,17 +6,23 @@ import {
   faUser,
   faBars,
   faLaptop,
+  faSun,
+  faMoon,
 } from '@fortawesome/free-solid-svg-icons'
 import { useState } from 'react'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import logo from '../../assets/logo-img.png'
 import './sidebar.scss'
-import { animateScroll as scroll } from 'react-scroll'
+import { animateScroll as scroll } from 'react-scroll';
+import { useTheme } from '../../contexts/ThemeContext.jsx';
 
 export default function Sidebar() {
   // STATES
   // to handle display of nav
-  const [showNav, setShowNav] = useState(false)
+  const [showNav, setShowNav] = useState(false);
+  const { isDarkMode, toggleDarkMode } = useTheme();
+
+
 
   const scrollTo = (elementId) => {
     scroll.scrollTo(document.getElementById(elementId).offsetTop, {
@@ -27,7 +33,7 @@ export default function Sidebar() {
   }
 
   return (
-    <div className="nav-bar">
+    <div className={`nav-bar ${isDarkMode ? 'dark-mode' : ''}`}>
       <div className="logo">
         <Link className="logo" to="/" onClick={() => setShowNav(false)}>
           <img className="logo-image" src={logo} alt="Logo" width={60} />
@@ -153,9 +159,17 @@ export default function Sidebar() {
         </NavLink>
       </nav>
       <FontAwesomeIcon
+        onClick={toggleDarkMode}
+        icon={isDarkMode ? faSun : faMoon}
+        color={isDarkMode ? 'white' : 'black'}
+        size='2x'
+        style={{margin:2}}
+        className="dark-mode-toggle"
+      />
+      <FontAwesomeIcon
         onClick={() => setShowNav(true)}
         icon={faBars}
-        color="#ffd700"
+        color="black"
         size="3x"
         className="hamburger-icon"
       />
