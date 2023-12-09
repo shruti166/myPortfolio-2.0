@@ -5,7 +5,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowAltCircleLeft, faArrowAltCircleRight, faLaptopCode } from '@fortawesome/free-solid-svg-icons';
 import netflix from '../../assets/images/netflix.png';
 import ajio from '../../assets/images/ajo.png';
-import envoy from '../../assets/images/envoy.png'
+import envoy from '../../assets/images/envoy.png';
+import indeed from '../../assets/images/indeed.png'
 
 const projects = [
   {
@@ -19,7 +20,7 @@ const projects = [
   },
   {
     title: 'Ajio - Full Stack',
-    description: '',
+    description: 'A full stack application created using MERN stack',
     githubIcon: faGithub,
     laptopIcon: faLaptopCode,
     image: ajio,
@@ -28,7 +29,7 @@ const projects = [
   },
   {
     title: 'Envoy - A clone',
-    description: 'Another take on Netflix design',
+    description: 'A clone made using basics of HTML, Javascript',
     githubIcon: faGithub,
     laptopIcon: faLaptopCode,
     image: envoy,
@@ -37,10 +38,10 @@ const projects = [
   },
   {
     title: 'Indeed',
-    description: 'Another take on Netflix design',
+    description: 'A clone made using basics of HTML, Javascript',
     githubIcon: faGithub,
     laptopIcon: faLaptopCode,
-    image: netflix,
+    image: indeed,
     githubLink: 'https://github.com/shruti166/Indeed_Clone',
     liveDemoLink: 'https://transcendent-melba-1c289a.netlify.app/',
   },
@@ -92,12 +93,14 @@ export default function Work() {
               icon={project.githubIcon}
               color="#fff"
               className="icon"
+              size='3x'
               style={{ marginRight: 10 }}
               onClick={goToGithub}
             />
             <FontAwesomeIcon
               icon={project.laptopIcon}
               color="#fff"
+              size='3x'
               className="icon"
               style={{ marginRight: 10 }}
               onClick={goToLiveDemo}

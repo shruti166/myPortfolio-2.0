@@ -11,6 +11,7 @@ import './index.css';
 import Contact from './components/Contact/Contact';
 
 
+
 function App() {
   const [loading, setLoading] = useState(true);
 
@@ -80,7 +81,10 @@ function App() {
                 <Route path="contact" element={<Contact />} />
               </Route>
             </Routes>
-          </Parallax>
+
+          </Parallax> 
+     
+    
         </div>
       )}
     </>

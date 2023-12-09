@@ -5,6 +5,12 @@ $primary-color: #ffd700;
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+
+/* Ensure your parallax layers cover the entire height of the viewport */
+.animation_layer {
+  height: 100vh;
+}
+
 #textblock {
     background-color: #210002;
     height: 100vh;
