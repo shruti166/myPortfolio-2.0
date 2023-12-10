@@ -2,13 +2,14 @@
   z-index: 100;
   width: 80%;
   margin: auto;
-  font-family:"SF UI Text", "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", sans-serif;
+  
 }
 
 .role {
   margin: 0;
   padding: 0;
   text-transform: uppercase;
+  margin-top: 10px;
   font-size: 80px;
   position: relative;
   color: #e7e6e7;
@@ -39,12 +40,13 @@ h2:hover:before {
   background-color: #fff;
   color: #4d4d4e;
   border: 1px solid #4d4d4e;
-  width: 290px;
+  width: 190px;
   padding: 12px 40px;
   font-size: 15px;
   text-transform: uppercase;
   cursor: pointer;
   position: relative;
+  margin-top: 15px;
   left: 0;
   transition: all 0.5s ease-out;
   border-radius: 10px;
