@@ -13,7 +13,6 @@ import { useState } from 'react'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import logo from '../../assets/logo-img.png'
 import './sidebar.scss'
-import { animateScroll as scroll } from 'react-scroll';
 import { useTheme } from '../../contexts/ThemeContext.jsx';
 
 export default function Sidebar() {
@@ -22,15 +21,6 @@ export default function Sidebar() {
   const [showNav, setShowNav] = useState(false);
   const { isDarkMode, toggleDarkMode } = useTheme();
 
-
-
-  const scrollTo = (elementId) => {
-    scroll.scrollTo(document.getElementById(elementId).offsetTop, {
-      duration: 800,
-      delay: 0,
-      smooth: 'easeInOutQuart',
-    })
-  }
 
   return (
     <div className={`nav-bar ${isDarkMode ? 'dark-mode' : ''}`}>
@@ -64,7 +54,6 @@ export default function Sidebar() {
           exact="true"
           className="about-link"
           to="/about"
-          onClick={() => scrollTo('about')}
         >
           <FontAwesomeIcon
             icon={faUser}
@@ -83,7 +72,6 @@ export default function Sidebar() {
           exact="true"
           className="about-link"
           to="/work"
-          onClick={() => scrollTo('work')}
         >
           <FontAwesomeIcon
             icon={faLaptop}

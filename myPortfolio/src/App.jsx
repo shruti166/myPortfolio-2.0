@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import './App.scss';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import Layout from './components/Layout/Layout';
 import Home from './components/Home/Home';
 import About from './components/About/About';
@@ -14,18 +14,19 @@ import Contact from './components/Contact/Contact';
 
 function App() {
   const [loading, setLoading] = useState(true);
+  const location = useLocation();
 
   useEffect(() => {
     const fetchData = async () => {
       setLoading(true);
       // Simulating an asynchronous operation
       setTimeout(() => {
-        // Setting loading to false when the operation is complete
         setLoading(false);
-      }, 1000); // Simulating a 1-second delay
+      }, 1000);
     };
+
     fetchData();
-  }, []); 
+  }, [location.key]);
 
   return (
     <>
