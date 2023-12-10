@@ -1,0 +1,70 @@
+.text-zone {
+  z-index: 100;
+  width: 80%;
+  margin: auto;
+  font-family:"SF UI Text", "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", sans-serif;
+}
+
+.role {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-size: 80px;
+  position: relative;
+  color: #e7e6e7;
+}
+.intro {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  color:#4d4d4e
+  
+}
+h2:before {
+  content: 'Frontend';
+  position: absolute;
+  top: 0;
+  left: 0;
+  color:#210002;
+  width: 0%;
+  overflow: hidden;
+  transition: all 2s;
+}
+
+h2:hover:before {
+  width: 100%;
+}
+
+.contact-btn {
+  background-color: #fff;
+  color: #4d4d4e;
+  border: 1px solid #4d4d4e;
+  width: 290px;
+  padding: 12px 40px;
+  font-size: 15px;
+  text-transform: uppercase;
+  cursor: pointer;
+  position: relative;
+  left: 0;
+  transition: all 0.5s ease-out;
+  border-radius: 10px;
+}
+
+
+.contact-btn:before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 0;
+  left: 0;
+  transition: all 0.5s ease-out;
+}
+
+.contact-btn:hover {
+  background-color: #4d4d4e;
+  color: #fff;
+}
+
+
+

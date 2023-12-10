@@ -1,0 +1,95 @@
+.about-zone {
+    width: 80%;
+    margin: auto;
+}
+
+.header {
+    display: flex;
+    font-family: "SF UI Text", "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", sans-serif;;
+    justify-content: center;
+}
+
+.title {
+    animation: none;
+}
+
+.about-section {
+    background-color: #4d4d4e; 
+    padding: 15px; 
+    color: #f0f0f0f1;
+    border-radius: 20px;
+}
+
+.about-section p {
+    line-height: 2;
+}
+
+
+ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+ul li {
+    list-style: none;
+    color: #484848;
+    font-size: 50px;
+    letter-spacing: 10px;
+    animation: lighting 1.6s linear infinite;
+}
+
+// @keyframes lighting {
+//     0% {
+//         color: #484848;
+//         text-shadow: none;
+//     }
+
+//     90% {
+//         color: #484848;
+//         text-shadow: none;
+//     }
+
+//     100% {
+//         color: #fff900;
+//         text-shadow: 0 0 7px #fff900, 0 0 50px #ff6c00;
+//     }
+// }
+
+ul li:nth-child(1) {
+    animation-delay: 0s;
+}
+
+ul li:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+ul li:nth-child(3) {
+    animation-delay: 0.2s;
+}
+ul li:nth-child(4) {
+    animation-delay: 0.3s;
+}
+ul li:nth-child(5) {
+    animation-delay: 0.4s;
+}
+
+h1 {
+    color: white;
+    font-size: 50px;
+}
+
+// .animation:before {
+//     content: "TRANSITIONS";
+//     text-transform: uppercase;
+//     font-family:"SF UI Text", "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", sans-serif;;
+//     font-weight: bold;
+//     color: #8a307e;
+//     animation: word-switch 5s infinite;
+// }
+
+// @keyframes word-switch {
+//     0% {content: 'Full Stack Web Developer'}
+//     50% {content: 'Problem Solver'}
+//     100% {content: 'Designer'}
+// }
